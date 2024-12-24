@@ -1,0 +1,56 @@
+[
+    {
+        "id": "aege",
+        "name": "Aegean",
+        "temperament": "Affectionate, Social, Intelligent, Playful, Active",
+        "origin": "Greece",
+        "description": "Native to the Greek islands known as the Cyclades in the Aegean Sea, these are natural cats, meaning they developed without humans getting involved in their breeding. As a breed, Aegean Cats are rare, although they are numerous on their home islands. They are generally friendly toward people and can be excellent cats for families with children.",
+        "life_span": "9-12",
+        "url": "https://raw.githubusercontent.com/siyonasnotra/WSD-ETE/main/images/image1.jpeg"
+    },
+    {
+        "id": "bali",
+        "name": "Bali",
+        "temperament": "Affectionate, Social, Intelligent, Playful",
+        "origin": "United States",
+        "description": "The Bali is a breed of cat known for its elegance and grace. It has a slender body and a long, silky coat. Bali cats are playful and energetic, and they enjoy interacting with their owners.",
+        "life_span": "12-16",
+        "url": "https://raw.githubusercontent.com/siyonasnotra/WSD-ETE/main/images/image2.jpeg"
+    },
+    {
+        "id": "beng",
+        "name": "Bengal",
+        "temperament": "Active, Alert, Confident, Intelligent",
+        "origin": "United States",
+        "description": "The Bengal cat is known for its exotic appearance, resembling a wild leopard. Bengals are highly active, playful, and affectionate. They require a lot of stimulation and exercise.",
+        "life_span": "12-16",
+        "url": "https://raw.githubusercontent.com/siyonasnotra/WSD-ETE/main/images/image3.jpeg"
+    },
+    {
+        "id": "siam",
+        "name": "Siamese",
+        "temperament": "Affectionate, Social, Vocal, Intelligent",
+        "origin": "Thailand",
+        "description": "Siamese cats are known for their distinctive color points and striking blue eyes. They are very vocal and enjoy being the center of attention. Siamese cats are social and affectionate with their owners.",
+        "life_span": "12-20",
+        "url": "https://raw.githubusercontent.com/siyonasnotra/WSD-ETE/main/images/image4.jpeg"
+    },
+    {
+        "id": "maine",
+        "name": "Maine Coon",
+        "temperament": "Gentle, Friendly, Intelligent, Playful",
+        "origin": "United States",
+        "description": "The Maine Coon is one of the largest domesticated cat breeds. They are known for their friendly and gentle nature, making them great companions. Maine Coons are intelligent and easy to train.",
+        "life_span": "12-15",
+        "url": "https://raw.githubusercontent.com/siyonasnotra/WSD-ETE/main/images/image5.jpeg"
+    },
+    {
+        "id": "pers",
+        "name": "Persian",
+        "temperament": "Affectionate, Quiet, Gentle, Sweet",
+        "origin": "Iran",
+        "description": "Persian cats are known for their long, luxurious coats and flat faces. They have a calm and gentle demeanor, making them ideal for indoor living. Persians are affectionate and enjoy being pampered.",
+        "life_span": "12-17",
+        "url": "https://raw.githubusercontent.com/siyonasnotra/WSD-ETE/main/images/image6.jpeg"
+    }
+]

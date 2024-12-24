@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Lover's Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('./images/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.5em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #666;
+            font-size: 1.8em;
+            margin-top: 20px;
+        }
+
+        /* Cat Image Section */
+        .image-container {
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-bottom: 30px;
+        }
+
+        #cat-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Button Styles */
+        button, .themed-link {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            width: 220px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s;
+            margin: 20px 0;
+        }
+
+        button:hover, .themed-link:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        button:focus, .themed-link:focus {
+            outline: none;
+            background-color: #3e8e41;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 50%;
+            max-width: 600px;
+        }
+        .modal h3 {
+            color: green;
+            margin-bottom: 15px;
+        }
+        .close {
+            cursor: pointer;
+            color: red;
+            font-size: 1.5em;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+        }
+        .modal.show {
+            display: block;
+        }
+
+        /* Form Styles */
+        form {
+            margin-top: 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 500px;
+            width: 100%;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input {
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: calc(100% - 22px);
+        }
+        input:valid {
+            border-color: green;
+        }
+        input:invalid {
+            border-color: red;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            form {
+                width: 90%;
+            }
+            button, .themed-link {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Cat Lover's Hub</h1>
+        <p>Discover the world's most amazing cat breeds and join the community!</p>
+    </div>
+
+    <!-- Cat Image Section -->
+    <h2>Random Cat Breed Image</h2>
+    <div class="image-container">
+        <img id="cat-image" src="" alt="Cat Image">
+    </div>
+    <button id="fetch-button">Fetch Cat Image</button>
+
+    <!-- Sign-Up Button and Modal -->
+    <h2>Join the Cat Lover's Club</h2>
+    <button id="open-signup-modal">Sign Up</button>
+
+    <div class="modal" id="signup-modal">
+        <span class="close" id="close-signup-modal">&times;</span>
+        <h2>Sign Up for Cat Lovers</h2>
+        <form id="sign-up-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{3,}">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+            <div id="form-errors" class="error"></div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <span class="close" id="close-success-modal">&times;</span>
+        <h3>Sign Up Successful!</h3>
+        <p>Welcome to the Cat Lover's Club!</p>
+    </div>
+
+    <!-- Links to Other Pages -->
+    <p><a href="./cat_breeds.html" class="themed-link">View Cat Breeds</a></p>
+    <p><a href="./about_us.html" class="themed-link">About Us</a></p>
+
+    <script src="app.js"></script>
+    <script src="forms.js"></script>
+</body>
+</html>

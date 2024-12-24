@@ -1,0 +1,56 @@
+[
+    {
+        "id": "aege",
+        "name": "Aegean",
+        "temperament": "Affectionate, Social, Intelligent, Playful, Active",
+        "origin": "Greece",
+        "description": "Native to the Greek islands known as the Cyclades in the Aegean Sea...",
+        "life_span": "9-12",
+        "url": "https://cdn2.thecatapi.com/images/ozEvzdVM-.jpg"
+    },
+    {
+        "id": "beng",
+        "name": "Bengal",
+        "temperament": "Alert, Agile, Energetic, Confident, Curious",
+        "origin": "United States",
+        "description": "The Bengal is a hybrid cat breed, a cross between a domestic cat and an Asian leopard cat...",
+        "life_span": "12-16",
+        "url": "https://cdn2.thecatapi.com/images/B1sbzgc5k.jpg"
+    },
+    {
+        "id": "siam",
+        "name": "Siamese",
+        "temperament": "Affectionate, Social, Intelligent",
+        "origin": "Thailand",
+        "description": "Siamese cats are known for their striking blue eyes and unique color-pointed fur...",
+        "life_span": "15-20",
+        "url": "https://cdn2.thecatapi.com/images/4iLxfr5VX.jpg"
+    },
+    {
+        "id": "pers",
+        "name": "Persian",
+        "temperament": "Gentle, Quiet, Affectionate",
+        "origin": "Iran",
+        "description": "Persian cats have long, luxurious fur and a sweet disposition...",
+        "life_span": "12-17",
+        "url": "https://cdn2.thecatapi.com/images/8i0t4s5F7.jpg"
+    },
+    {
+        "id": "main",
+        "name": "Maine Coon",
+        "temperament": "Friendly, Gentle, Playful",
+        "origin": "United States",
+        "description": "Maine Coons are one of the largest domesticated cat breeds...",
+        "life_span": "12-15",
+        "url": "https://cdn2.thecatapi.com/images/BkJm2x5V7.jpg"
+    },
+    {
+        "id": "ragd",
+        "name": "Ragdoll",
+        "temperament": "Affectionate, Gentle, Relaxed",
+        "origin": "United States",
+        "description": "Ragdolls are known for their docile and placid temperament...",
+        "life_span": "12-15",
+        "url": "https://cdn2.thecatapi.com/images/B1R6T5qE7.jpg"
+    }
+]

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px 0;
+        }
+
+        .about-section, .heroes-section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 40px 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-section:hover, .heroes-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section p {
+            font-size: 1.2em;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .heroes-section {
+            text-align: center;
+        }
+
+        .hero {
+            background: #fafafa;
+            border-radius: 8px;
+            margin: 20px 0;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .hero:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .hero:hover img {
+            transform: scale(1.1);
+        }
+
+        .hero div {
+            text-align: left;
+        }
+
+        .hero h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .hero p {
+            margin-top: 5px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img {
+                margin: 0 0 15px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <div class="container">
+        <section class="about-section">
+            <p>We are passionate about cats and committed to sharing our love for these wonderful creatures. Our team is dedicated to providing accurate information and creating engaging content for cat enthusiasts.</p>
+            <p>Our heroes are individuals who go above and beyond to promote feline welfare and education. Learn more about their contributions and stories.</p>
+        </section>
+       
+        <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+</body>
+
+</html>
